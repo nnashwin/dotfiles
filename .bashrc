@@ -87,6 +87,3 @@ export GOPATH="$HOME/go"
 
 # service docker status > /dev/null || sudo service docker start
 source "$HOME/.cargo/env"
-
-export GOOGLE_OAUTH_CLIENT_ID=429503946316-ja2b97856r60s094lff1snmoe9irdd14.apps.googleusercontent.com
-export GOOGLE_OAUTH_CLIENT_SECRET=imKfrWJKAmmFzgG5WB_TUZ5Z
