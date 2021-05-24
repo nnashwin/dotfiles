@@ -1,0 +1,9 @@
+{
+    "coc.preferences.formatOnSaveFiletypes":[
+        "go",
+        "rust",
+        "typescript",
+        "javascript",
+        "markdown"
+    ]
+}
