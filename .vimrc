@@ -6,10 +6,18 @@ set nocompatible
 " }}}
 
 " Syntax highlighting {{{
-set t_Co=256
-set background=dark
+set t_Co=256f
 syntax on
 colorscheme pablo
+" }}}
+
+
+" Error Message Highlighting {{{
+""" Customize colors
+hi Pmenu ctermbg=darkgray ctermfg=white
+hi PmenuSel ctermbg=white ctermfg=black
+hi PmenuSbar ctermbg=yellow ctermfg=black
+hi CocFloating ctermbg=lightred ctermfg=darkred
 " }}}
 
 let mapleader=","
@@ -348,6 +356,7 @@ augroup filetype_go
         noremap <leader>gt :GoTest<CR>
     endfunction
 
+    autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
     autocmd BufRead,BufNewFile *.go call AddGoOptions()
     au BufRead,BufNewFile *.go set ft=go
 augroup END
