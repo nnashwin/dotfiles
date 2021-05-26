@@ -13,7 +13,9 @@ colorscheme pablo
 
 
 " Error Message Highlighting {{{
-""" Customize colors
+
+""" Changes popup colors to be more readble 
+"""" Customize colors
 hi Pmenu ctermbg=darkgray ctermfg=white
 hi PmenuSel ctermbg=white ctermfg=black
 hi PmenuSbar ctermbg=yellow ctermfg=black
